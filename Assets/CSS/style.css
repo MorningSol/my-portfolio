@@ -181,7 +181,12 @@ footer {
     background-image: url(../img/rafael-leao-PW0-vZD0wis-unsplash.jpg);
     background-size: cover;
     background-position: left;
-    flex: 80%; 
+    flex: 80%;
+    opacity: 80%;
+}
+.project-1:hover {
+    opacity: 100%;
+
 }
 
 .project-2 {
@@ -191,6 +196,11 @@ footer {
     background-image: url(../img/justin-lane-lwwM_dotpcs-unsplash.jpg);
     background-size: cover;
     flex: 40%;
+    opacity: 80%;
+}
+
+.project-2:hover {
+    opacity: 100%;
 }
 
 .project-3 {
@@ -201,8 +211,12 @@ footer {
     background-size: cover;
     background-position: 70%;
     flex: 40%;
+    opacity: 80%;
 }
 
+.project-3:hover {
+    opacity: 100%;
+}
 .project-4 {
     display: flex;
     padding: 100px 0px 25px 0px;
@@ -210,6 +224,11 @@ footer {
     background-image: url(../img/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg);
     background-size: cover;
     flex: 40%;
+    opacity: 75%;
+}
+
+.project-4:hover {
+    opacity: 100%;
 }
 
 .project-5 {
@@ -220,6 +239,11 @@ footer {
     background-size: cover; 
     background-position: bottom right; 
     flex: 40%;
+    opacity: 75%;
+}
+
+.project-5:hover {
+    opacity: 100%;
 }
     /* Work end */
 
