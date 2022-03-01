@@ -14,20 +14,24 @@ header {
     
     padding: 30px 10px 30px 0px;
     background-color: black;
-    background-blend-mode: luminosity;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     
 }
 header h1 {
     font-weight: bolder;
     font-size: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: black;
     background: rgb(52, 165, 240);
-    padding: 5px 10px 5px 80px; 
+    padding: 5px 5px 5px 50px; 
     border-top-right-radius: 10px;
     border-bottom-right-radius:10px;
+    text-align: right;
+    margin: 10px 0px;
+    
 }
 
 header a {
@@ -35,29 +39,30 @@ header a {
     color: black;
     align-items: center;
 }
+
 header nav {
-    margin-right: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
+    margin: 7px 0px;
 }
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; 
+    justify-content: center;
     align-items: center;
-    list-style: none;
+    list-style: none; 
 }
 
-header nav ul li a{
-    margin: 0px 20px;
-    padding: 5px 10px;
+header nav ul li {
+    margin: 10px;
+}
+header nav ul li a {
+    padding: 20px 10px 5px 10px;
     color: rgb(52, 165, 240);
+    text-shadow: 0 0 10px rgba(52, 165, 240, 0.8);
     font-size: 20px;
     border-bottom: solid rgb(52, 165, 240);
-    color: rgb(52, 165, 240);
+    margin: 40px;
+    
 }
     /* Header end */
 
@@ -66,22 +71,23 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background: black;
     padding: 20px 20px;
-    
 
 }
 .contact-me {
     color: rgb(52, 165, 240);
     font-size: 36px;
-    width: 15%;
+    flex: 1 15%;
     text-align: right;
     border-right: 10px solid rgb(52, 165, 240);
-    padding: 15px 25px;
+    padding: 20px 25px;
+    text-shadow: 0 0 10px rgba(52, 165, 240, 0.4);
 }
 
 .contact-sections {
-    width: 85%;
+    flex: 2 60% ;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -93,14 +99,16 @@ footer {
     text-decoration: none;
     border-bottom: solid rgb(52, 165, 240);
     color: rgb(52, 165, 240);
+    text-shadow: 0 0 10px rgba(52, 165, 240, 0.4);
     font-size: 20px;
     padding: 5px; 
+    margin: 10px 40px;
 }
     /* Footer End */
 
     /* Hero Start */
 .hero {
-    padding: 160px 20px 20px 100px;
+    padding: 180px 20px 10px 100px;
     background-image: url(../img/marek-piwnicki-APwS-sruIIs-unsplash.jpg);
     background-size: cover; 
     background-attachment: fixed;     
@@ -110,12 +118,13 @@ footer {
 }
 .hero h3 {
     font-size: 36px;
-    text-shadow: -1px 1px rgb(95, 95, 95);
-    padding: 5px 10px;
+    font-style: oblique;
+    padding: 2px 15px 2px 10px;
     font-weight: bold;
-    background-color: rgb(0, 0, 0, 0.3);
-    border-radius: 5px 5px;
+    background-color: rgb(0, 0, 0, 50%);
+    border-radius: 30px 10px 30px 10px;
     color: rgb(52, 165, 240); 
+    
     
 }
     /* Hero end */   
@@ -126,17 +135,19 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px; 
+   
 }
 
 .about-me h2 {
     font-size: 36px;
-    width: 15%;
+    flex: 1 15%;
     text-align: right ;
     padding: 10px 20px;
-    border-right: 10px solid black
+    border-right: 10px solid black;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .about-me p {
-    width: 85%;
+    flex: 2 60%;
     padding: 10px 45px;
     font-weight: bold;
     font-size: 22px;
@@ -155,7 +166,8 @@ footer {
     text-align: right;
     padding: 10px;
     border-right: 10px solid black;
-    width: 15%;
+    flex: 1 15%;
+    
 }
 
 .projects {
@@ -163,7 +175,7 @@ footer {
     flex-wrap: wrap;
     justify-content: left;
     align-items: flex-end;
-    width: 85%;
+    flex: 2 60%;
 }
 
 .project-title {
@@ -188,7 +200,7 @@ footer {
     background-image: url(../img/rafael-leao-PW0-vZD0wis-unsplash.jpg);
     background-size: cover;
     background-position: left;
-    flex: 80%;
+    flex: 1 80%;
     opacity: 80%;
 }
 .project-1:hover {
@@ -200,9 +212,10 @@ footer {
     display: flex;
     padding: 100px 0px 25px 0px;
     margin: 10px;
+    border: 5px solid black;
     background-image: url(../img/justin-lane-lwwM_dotpcs-unsplash.jpg);
     background-size: cover;
-    flex: 40%;
+    flex: 1 40%;
     opacity: 80%;
 }
 
@@ -214,10 +227,11 @@ footer {
     display: flex;
     padding: 100px 0px 25px 0px;
     margin: 10px;
+    border: 5px solid black;
     background-image: url(../img/osman-koycu-DdxfliQ5ap8-unsplash.jpg);
     background-size: cover;
     background-position: 70%;
-    flex: 40%;
+    flex: 1 40%;
     opacity: 80%;
 }
 
@@ -228,9 +242,10 @@ footer {
     display: flex;
     padding: 100px 0px 25px 0px;
     margin: 10px;
+    border: 5px solid black;
     background-image: url(../img/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg);
     background-size: cover;
-    flex: 40%;
+    flex: 1 40%;
     opacity: 75%;
 }
 
@@ -242,10 +257,11 @@ footer {
     display: flex;
     padding: 100px 0px 25px 0px;
     margin: 10px;
+    border: 5px solid black;
     background-image: url(../img/hero-bg.jpg);
     background-size: cover; 
     background-position: bottom right; 
-    flex: 40%;
+    flex: 1 40%;
     opacity: 75%;
     
 }
@@ -261,5 +277,12 @@ footer {
 
 
 
+
+    @media screen and (max-width: 768px) {
+
+    }
+    @media screen and (max-width: 575px) {
+    
+    }
 
 
