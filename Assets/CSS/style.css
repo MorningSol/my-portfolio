@@ -12,7 +12,7 @@ body {
     /* Header Start */
 header {
     
-    padding: 30px 10px 30px 0px;
+    padding: 20px 10px 20px 0px;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -34,12 +34,6 @@ header h1 {
     
 }
 
-header a {
-    text-decoration: none;
-    color: black;
-    align-items: center;
-}
-
 header nav {
     margin: 7px 0px;
 }
@@ -53,15 +47,16 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 10px;
+    margin: 20px 40px;
 }
 header nav ul li a {
+    text-decoration: none;
     padding: 20px 10px 5px 10px;
     color: rgb(52, 165, 240);
     text-shadow: 0 0 10px rgba(52, 165, 240, 0.8);
     font-size: 20px;
     border-bottom: solid rgb(52, 165, 240);
-    margin: 40px;
+    margin: 0px 0px;
     
 }
     /* Header end */
@@ -73,7 +68,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background: black;
-    padding: 20px 20px;
+    padding: 20px 0px;
 
 }
 .contact-me {
@@ -82,7 +77,7 @@ footer {
     flex: 1 15%;
     text-align: right;
     border-right: 10px solid rgb(52, 165, 240);
-    padding: 20px 25px;
+    padding: 20px 25px 20px 0px;
     text-shadow: 0 0 10px rgba(52, 165, 240, 0.4);
 }
 
@@ -102,7 +97,7 @@ footer {
     text-shadow: 0 0 10px rgba(52, 165, 240, 0.4);
     font-size: 20px;
     padding: 5px; 
-    margin: 10px 40px;
+    margin: 10px 35px;
 }
     /* Footer End */
 
@@ -134,7 +129,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px; 
+    padding: 20px 0px; 
    
 }
 
@@ -158,16 +153,16 @@ footer {
 .work {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;   
+    padding: 20p 0px;   
 }
 
 .work h2 {
     font-size: 36px;
     text-align: right;
-    padding: 10px;
+    padding: 10px 20px;
     border-right: 10px solid black;
     flex: 1 15%;
-    
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .projects {
@@ -182,8 +177,7 @@ footer {
     font-size: 20px;
     color: rgb(52, 165, 240);
     padding: 20px;
-    
-    background-color: black;
+    background-color: black; 
 }
 
 .project-title span {
@@ -263,7 +257,7 @@ footer {
     background-position: bottom right; 
     flex: 1 40%;
     opacity: 75%;
-    
+    text-decoration: none;
 }
 
 .project-5:hover {
@@ -275,14 +269,157 @@ footer {
     /* Work end */
 
 
-
-
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 980px) {
+      
+        .contact-sections {
+            
+            flex-direction: column;
+        }
+        .contact-me {
+            padding: 40px 25px 40px 0px;
+        }  
+          
 
     }
+
+    @media screen and (max-width: 768px) {
+        .contact-me{
+            font-size: 30px;
+        }
+        .contact-sections a {
+            font-size: 20px;
+        }
+        header nav ul {
+            justify-content: flex-start;
+        } 
+        .about-me h2 {
+            font-size: 30px;
+        }
+        .work h2 {
+            font-size: 30px;
+        }
+        .about-me p{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .project-2 + .project-3  {
+            flex: 1 80%;
+        }  
+        .project-4 +.project-5 {
+            flex: 1 80%;
+        } 
+       
+    }
     @media screen and (max-width: 575px) {
-    
+        
+        header {
+            padding: 0px 10px 20px 10px;
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 46px;
+            padding: 20px 10px 10px 10px; 
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius:10px;
+            border-top-right-radius: 0px;
+            margin: 0px 0px;
+        }
+        header nav ul {
+            justify-content:space-evenly;  
+        }
+
+        
+
+        .about-me {
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+        .about-me h2 {
+            font-size: 36px; 
+            text-align: center ;
+            padding: 10px 0px;
+            border-bottom: 10px solid black;
+            border-right:0; 
+            margin: 0px 100px 0px 100px;
+  
+        }
+        .about-me p { 
+            padding: 20px 0px 10px 0px;
+            font-size: 22px;
+            text-align: center;
+            
+            margin: 10px 30px 0px 30px ;
+        }
+
+
+        .work {
+           
+            flex-direction: column;
+            justify-content: center;   
+        }
+        .work h2 {
+            font-size: 36px;
+            text-align: center;
+            padding: 60px 0px 10px 0px;
+            border-bottom: 10px solid black;
+            border-top: 1px solid black;
+            border-right: 0;
+            margin: 0px 100px 30px 100px;
+        }
+        .project-1 {
+            margin: 0px;
+            border-top: 10px solid black;
+            border-bottom: 5px solid black;
+            border-left: 0;
+            border-right: 0;
+        }
+        .project-2 {
+            margin: 0px;
+            border-top: 5px solid black;
+            border-bottom: 5px solid black;
+            border-left: 0;
+            border-right: 0;
+        }
+        .project-3 {
+            margin: 0px; 
+            border-top: 5px solid black;
+            border-bottom: 5px solid black;
+            border-left: 0;
+            border-right: 0;
+        }
+        .project-4 {
+            margin: 0px; 
+            border-top: 5px solid black;
+            border-bottom: 5px solid black;
+            border-left: 0;
+            border-right: 0;
+        }
+        .project-5 {
+            margin: 0px;
+            border-top: 5px solid black;
+            border-bottom: 0px solid black;
+            border-left: 0;
+            border-right: 0;
+        }
+        
+
+        footer {
+            flex-direction: column;
+        }
+        .contact-me {
+            font-size: 36px;
+            text-align: center;
+            border-bottom: 5px solid rgb(52, 165, 240);
+            border-right: 0;
+            padding: 10px 80px 10px 80px;
+            margin-bottom: 10px;
+        }
     }
 
 
