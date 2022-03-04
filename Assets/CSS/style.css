@@ -153,7 +153,6 @@ footer {
 
 .about-info img {
     flex: 1;
-    border: 5px solid rgb(0, 0, 0);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
