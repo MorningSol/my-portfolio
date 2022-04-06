@@ -191,6 +191,23 @@ footer {
     border: 5px solid black;
 }
 
+.project-concertium {
+    display: flex;
+    padding: 225px 0px 25px 0px;
+    margin: 10px;
+    border: 5px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: url(../img/Concertium_Screenshot1.jpg);
+    background-size: cover;
+    background-position: left;
+    flex: 1 80%;
+    opacity: 80%;
+    text-decoration: none;
+}
+.project-concertium:hover {
+    opacity: 100%;
+}
+
 .project-1 {
     display: flex;
     padding: 225px 0px 25px 0px;
@@ -382,6 +399,14 @@ footer {
             border-right: 0;
             margin: 0px 100px 40px 100px;
         }
+        .project-concertium {
+            margin: 0px;
+            border-top: 10px solid black;
+            border-bottom: 5px solid black;
+            border-left: 0;
+            border-right: 0;
+        }
+
         .project-1 {
             margin: 0px;
             border-top: 10px solid black;
