@@ -208,19 +208,19 @@ footer {
     opacity: 100%;
 }
 
-.project-1 {
+.project-book-beans {
     display: flex;
     padding: 225px 0px 25px 0px;
     margin: 10px;
     border: 5px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background-image: url(../img/rafael-leao-PW0-vZD0wis-unsplash.jpg);
-    background-size: cover;
+    background-image: url(../img/logo.jpeg);
     background-position: left;
     flex: 1 80%;
-    opacity: 80%;
+    opacity: 75%;
+    text-decoration: none;
 }
-.project-1:hover {
+.project-book-beans:hover {
     opacity: 100%;
 }
 
